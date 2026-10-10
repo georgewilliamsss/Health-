@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Peptide Purchase Decision</title>
+<style>
+:root{--ink:#1c2430;--muted:#55606e;--line:#d5dbe3;--accent:#1f5f8b;--accent-bg:#eef5fb;--warn:#8a4b08;--warn-bg:#fdf6ec}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff}
+body{font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Liberation Sans",sans-serif;color:var(--ink);font-size:8.6pt;line-height:1.22}
+h1{font-size:15pt;margin:0;letter-spacing:-.2px}
+.sub{color:var(--muted);font-size:8.6pt;margin:1px 0 5px}
+h2{font-size:9.6pt;margin:5px 0 2px;color:var(--accent);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--line);padding-bottom:1px}
+.decision{border:1.5px solid var(--accent);background:var(--accent-bg);border-radius:5px;padding:4px 9px 5px}
+.decision .buy{font-size:12.5pt;font-weight:700;margin:0}
+.decision .buy span{font-weight:400;font-size:9pt;color:var(--muted)}
+.decision .meta{margin:2px 0 3px}
+.decision .why{margin:0}
+.tag{display:inline-block;background:var(--warn-bg);color:var(--warn);border:1px solid #e8c99a;border-radius:3px;padding:0 4px;font-weight:700;font-size:8.6pt}
+table{width:100%;border-collapse:collapse;margin-top:2px}
+th,td{padding:1.5px 5px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{background:#f3f5f8;font-size:8.6pt}
+td.n,th.n{text-align:right;white-space:nowrap}
+.small{color:var(--muted)}
+tr.tot td{border-bottom:none;padding-top:1px;padding-bottom:1px}
+tr.grand td{font-weight:700;border-top:1.5px solid var(--ink)}
+.note{margin:3px 0 0}
+.cols{display:flex;gap:14px}
+.cols>div{flex:1;min-width:0}
+ul{margin:2px 0 0;padding-left:13px}
+li{margin:0 0 1px}
+p{margin:2px 0}
+.footer{margin-top:4px;border-top:1px solid var(--line);padding-top:3px;color:var(--muted)}
+b{font-weight:700}
+</style></head>
+<body>
+<h1>Peptide purchase decision</h1>
+<div class="sub">Columbus, Ohio | researched 2026-10-10 | prices as seen that day</div>
+
+<div class="decision">
+<p class="buy">Buy from: Koi Peptides (Koi Research Labs LLC) <span>&nbsp;koipeptides.com</span> &nbsp;<span class="tag">PROVISIONAL: only if every gate below passes</span></p>
+<p class="meta"><b>Ships from:</b> unnamed "US warehouses" (registered agent in Sheridan, WY). <b>Transit to Columbus:</b> about 3-5 business days; same-day dispatch if ordered Mon-Fri before 2 PM ET.</p>
+<p class="why"><b>Why:</b> stronger of the two vendors selling water on the same site: every product has its own Freedom Diagnostics COA accession, while runner-up Kylo stamps one lot on 6+ compounds. Unconfirmed: live checkout, Ohio shipping, BPC-157 10 mg listing, per-component blend COA. Transparency 5/10.</p>
+</div>
+
+<h2>Buy exactly this (12-week course)</h2>
+<table>
+<thead><tr><th style="width:21%">Item</th><th>Exact product name and size <span class="small">(COA accession, HPLC purity)</span></th><th class="n">Qty</th><th class="n">Unit</th><th class="n">Line total</th></tr></thead>
+<tbody>
+<tr><td>GHK-Cu</td><td>GHK-Cu 50mg &amp; 100mg - Copper Tripeptide, <b>50 mg</b> <span class="small">(2605290222, 99.96%)</span></td><td class="n">3</td><td class="n">$39.95*</td><td class="n">$119.85</td></tr>
+<tr><td>BPC-157</td><td>BPC-157 5 &amp; 10mg, <b>10 mg</b> <span class="small">(2604060200, 99.283%; listing not yet seen)</span></td><td class="n">5</td><td class="n">$59.95*</td><td class="n">$299.75</td></tr>
+<tr><td>TB-500</td><td>TB-500 (Thymosin Beta-4) 10mg, <b>10 mg</b> <span class="small">(2512290134, 99.127%; Dec 2025 lot)</span></td><td class="n">5</td><td class="n">$59.95</td><td class="n">$299.75</td></tr>
+<tr><td>CJC-1295 no DAC + Ipamorelin</td><td>CJC-1295 No DAC + Ipamorelin Blend 10mg, <b>5 mg + 5 mg</b> <span class="small">(2604060224, 99.928%; fallback blend, replaces both singles)</span></td><td class="n">3</td><td class="n">$79.95</td><td class="n">$239.85</td></tr>
+<tr><td>Bacteriostatic water</td><td>Bacteriostatic Water for Peptide Reconstitution, <b>10 mL</b> <span class="small">(2604030180; 2 vials per 28-day block)</span></td><td class="n">6</td><td class="n">$19.95*</td><td class="n">$119.70</td></tr>
+<tr class="tot"><td colspan="4" class="n">Subtotal</td><td class="n">$1,078.90</td></tr>
+<tr class="tot"><td colspan="4" class="n">Shipping (free over $200; optional cold pack extra, recommended)</td><td class="n">$0.00</td></tr>
+<tr class="grand"><td colspan="4" class="n">Estimated total, before Ohio sales tax (plausible range $1,060-$1,150)</td><td class="n">$1,078.90</td></tr>
+</tbody></table>
+<p class="note"><span class="small">* price inferred from a page range; confirm in cart.</span> <b>Water and syringes:</b> Koi's water is labelled "not for human injection"; USP bacteriostatic water from a pharmacy is safer (drop $119.70). Koi sells no syringes: get U-100 0.3 mL insulin syringes, 3 mL mixing syringes, swabs and a sharps bin at a Columbus pharmacy.</p>
+
+<div class="cols">
+<div>
+<h2>Why this vendor</h2>
+<ul>
+<li><b>Per-product COAs:</b> each product has a distinct Freedom Diagnostics accession, searchable at koipeptides.com/coa/; HPLC 99.1-99.96%; TB-500 shows LC-MS identity and net 9.97 mg.</li>
+<li><b>Beats Kylo, narrowly:</b> Kylo puts lot SD-260728-1 on 6+ compounds, relies on a weak lab (Optiq, 2/10) for TB-500 and ipamorelin, and shows "COA coming soon" on current batches.</li>
+<li><b>Same-site water and fast shipping:</b> standalone 3/10 mL water; same-day dispatch, 3-5 day transit, free over $200; no FDA warning letter found.</li>
+<li><b>Gaps:</b> one lab only (Freedom, 4/10, no ISO 17025 found); no Finnrick or TitrateLab data; no endotoxin value seen for any lot; Koi's own lot IDs are not published.</li>
+<li><b>Red flags:</b> unverified Trustpilot claims of a relabelled COA and non-working QR codes; PeptIQ 65, "Mixed signals"; an overfill report; BPC-157 purity differs between pages.</li>
+</ul>
+<h2>Separate vials, not a stack</h2>
+<p>Buy GHK-Cu, BPC-157 and TB-500 as single vials, one lot per peptide for the whole course. Koi sells no standalone CJC-1295 no DAC, so its 1:1 5/5 mg blend is the only acceptable fallback, and only if its lot PDF gives MS identity, quantity and purity per component plus endotoxin; if not, switch vendor. Reject GLOW, KLOW, Wolverine (BPC/TB) and the GLOW Stack.</p>
+<h2>Runner-up</h2>
+<p><b>Kylo Peptides</b> (kylopeptides.com, transparency 4/10). If Koi fails a gate, go first to <b>Panda Peptides</b> (all five as true singles, about $700-$770, pharmacy water); use Kylo only if water must come from the same site (buy its CJC + IPA Stack, $99.95, separate vials).</p>
+</div>
+<div>
+<h2>Before you order</h2>
+<ul>
+<li><b>Go/no-go gates:</b> checkout accepts a 432xx address; BPC-157 10 mg is listed; Koi emails full PDFs for the shipping lots (chromatogram, MS mass, net content, endotoxin in EU) and confirms one lot per peptide in writing. Masses: GHK-Cu ~402, BPC-157 ~1,419, TB-500 frag. ~889, CJC no DAC ~3,368 (DAC is ~3,647), ipamorelin ~712 Da.</li>
+<li><b>Legal status:</b> research-use-only; none of the five is FDA-approved; no lawful injectable route today. FDA letters (Mar, Jun, Aug 2026) treat vendor-sold water as evidence of human-use intent. Lawful GP options: topical GHK-Cu (503A pharmacy); sermorelin or tesamorelin for CJC/Ipa.</li>
+<li><b>On arrival:</b> look up each accession at freedomdiagnosticstesting.com (client must read Koi); match the lot printed on each vial to its COA, and raise any unlabelled vial before use. Unopened vials frozen, mixed at 2-8 C; discard 28 days after first puncture.</li>
+<li><b>GP sets dosing:</b> doses in mcg and syringe units; stagger starts, one agent every 5-7 days. Baseline IGF-1, HbA1c, BP, copper and ceruloplasmin; review at 4 weeks; stop on high IGF-1, rising glucose, oedema, infection or cloudy GHK-Cu.</li>
+<li><b>Water:</b> pharmacy USP bacteriostatic water (GP prescription) is safer; if you accept it, Panda (6/10) outranks Koi.</li>
+<li><b>Keep the first order small:</b> 8 weeks costs about $679.30 (GHK-Cu 2, BPC-157 3, TB-500 3, blend 2, water 4), given FDA enforcement waves and vendor closures. Pay by credit card; no refund policy found.</li>
+</ul>
+</div>
+</div>
+
+<div class="footer"><b>Evidence quality:</b> search-verified, not page-verified (no COA PDF opened, no lab lookup, no live checkout; Koi site status unknown; three prices inferred). <b>Confidence: low.</b> &nbsp;Background: research/01 to 06 in the repo.</div>
+</body></html>
